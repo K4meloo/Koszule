@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  user-select: none;
+  --color-main: #6DC5ED;
+  --color-main-dark: #325B6E;
+  --color-main-light: #73CFFA;
+}
+nav {
+  height: 10vh;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0;
+}
+main {
+  background-color: white;
+  height: 90vh;
+  width: 100vw;
+  padding-top: 2vh;
+}
+#shopItem {
+  box-shadow: 0px 0px 40px 0px rgb(233, 233, 233);
+  border-radius: 40px;
+  background-color: white;
+  width: 98vw;
+  height: 86vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.item-divider {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.inner-item-divider {
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  height: 90%;
+}
+#threeViewportPlaceholder {
+  margin: auto;
+  height: 80%;
+  width: 100%;
+}
+#rangeRotation {
+  width: 80%;
+  margin-left: 10%;
+}
+#itemName {
+  font-size: 4rem;
+  font-weight: 100;
+}
+#sexSelectorContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: fit-content;
+  margin-top: 20px;
+}
+.selector {
+  font-size: 2rem;
+  font-weight: 100;
+  background-color: white;
+  margin: 0;
+  border: 0;
+  transition: 250ms ease-in-out;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.selector-active {
+  font-size: 2rem;
+  font-weight: 300;
+  background-color: var(--color-main);
+  color: white;
+  margin: 0;
+  border: 0;
+  transition: 250ms ease-in-out;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.selector:hover {
+  background-color: var(--color-main-light);
+}
+.selector:active {
+  background-color: var(--color-main-dark);
+  color: var(--color-main-light);
+}
+.selector-active:active {
+  background-color: var(--color-main-dark);
+  color: var(--color-main-light);
+}
+#sizeSelectorContainer {
+  margin-top: 40px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  
+}
+#colorSelectorContainer {
+  margin-top: 40px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+}
+#sleeveSelector {
+  margin-top: 40px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+}
+#collarSelector {
+  margin-top: 40px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+}
+#orderInfo {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+#price {
+  float: left;
+  font-size: 4rem;
+  font-weight: 300;
+}
+#toCart {
+  float: left;
+}

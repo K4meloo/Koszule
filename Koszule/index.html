@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sklep</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <nav>
+        
+    </nav>
+    <main>
+        <section id="shopItem">
+            <section class="item-divider">
+                <div class="inner-item-divider" id="threeViewportPlaceholder"></div>
+                <div> 
+                  <input type="range" min="-314" max="314" id="rangeRotation">
+                </div>
+            </section>
+            <section class="item-divider">
+                <div class="inner-item-divider">
+                    <h1 id="itemName">Koszula</h1>
+                    <hr>
+                    <div id="sexSelectorContainer">
+                        <button id="women" class="selector-active" value="W">Damska</button>
+                        <button id="men" class="selector" value="M">Męska</button>
+                    </div>
+                    
+                    <div id="sizeSelectorContainer">
+                        <button id="s" class="selector">S</button>
+                        <button id="m" class="selector-active">M</button>
+                        <button id="l" class="selector">L</button>
+                    </div>
+
+                    <div id="colorSelectorContainer">
+                        <button id="red" class="selector-active">Czerwona w kratkę</button>
+                        <button id="blue" class="selector">Niebieska</button>
+                        <button id="black" class="selector">Czarna</button>
+                        <button id="white" class="selector">Biała</button>
+                    </div>
+
+                    <div id="sleeveSelector">
+                        <button class="selector-active" id="long">Długi rękaw</button>
+                        <button class="selector" id="short">Krótki rękaw</button>
+                    </div>
+                    <div id="collarSelector">
+                        <button class="selector-active" id="collar">Kołnierz</button>
+                        <button class="selector" id="noCollar">Stójka</button>
+                    </div>
+                    
+
+                    <div id="orderInfo">
+                        <p id="price">99.99 PLN</p>
+                        <button class="selector-active" id="toCart">Do koszyka</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
